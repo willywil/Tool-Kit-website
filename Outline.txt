@@ -1,0 +1,38 @@
+Objective - This site would be the ideal go to spot for info that is not taught in college, tricks of the trade, 
+  or place for knowledge of a task that the everyday engineer would have to learn for themselves and make mistakes doing. 
+  That one person becomes a better engineer but for everyother engineer they shouldn't have to remake the same mistakes.
+
+Home page -
+*Engineering Subjects
+  _Electronics
+    -resources
+      +links
+      +equations
+  _Electrical
+    -resources
+      +links
+      +equations
+  _Mechanical
+    -resources
+      +links
+      +equations
+  _Software
+    -resources
+      +links
+      +equations
+  _Civil
+    -resources
+      +links
+      +equations
+  _Environmental
+    -resources
+      +links
+      +equations
+  _AeroSpace
+    -resources
+      +links
+      +equations
+Form
+  -Users
+  -Links to other subjects
+Contact us
