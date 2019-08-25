@@ -1,6 +1,17 @@
 Objective - This site would be the ideal go to spot for info that is not taught in college, tricks of the trade, 
   or place for knowledge of a task that the everyday engineer would have to learn for themselves and make mistakes doing. 
   That one person becomes a better engineer but for everyother engineer they shouldn't have to remake the same mistakes.
+  
+  Resource for such information
+    Forms
+      Macrofab.wiki?
+      EEVblog form
+    PodCasts
+      Software Engineering Daily
+      EmbeddedFM
+      TheAmpHour
+      MacroFab Engineering
+      Unnamed Reverse Engineering
 
 Home page -
 *Engineering Subjects
@@ -29,6 +40,10 @@ Home page -
       +links
       +equations
   _AeroSpace
+    -resources
+      +links
+      +equations
+  _Robotics
     -resources
       +links
       +equations
