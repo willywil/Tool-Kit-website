@@ -1,12 +1,18 @@
 
-
-header{
-    text-align: right;
-    
-    display: inline;
-
+header body div a ul li{
+    display: block;
 }
 
+#mainHeader {
+    display: inline;
+}
+#mySidenav {
+    float: left;
+}
+#homePage {
+    float: right;
+    padding: 11px 0px;
+}
 
 body{
     
@@ -22,6 +28,7 @@ body{
     background-color: beige;
     overflow-x: hidden;
     padding: 20px 0px 0px 0px;
+    text-align: center;
 }
 .sidenav a {
     padding: 8px 8px 8px 5px;
