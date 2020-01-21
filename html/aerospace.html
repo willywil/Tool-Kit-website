@@ -1,6 +1,40 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtdâ€>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
+        
+            <link rel="stylesheet" type="text/css" href="CSS/styles.css"/>
+            <title>Tools for Engineers</title>
+            <meta charset="utf-8">
+            <meta name="description" content="This website is a resource for engineer formulas, equations, calculators, and tools">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="keywords" content="formulas, equations, calculators, tools, math, engineer">
+            <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+            <link rel="icon" type="image/png" href="images/favicon.ico">
+            <!-- <link rel="manifest" href="/site.webmanifest"> this is causing an error on the page and i got it from the website that gave me the favicon-->
+            <script data-ad-client="ca-pub-3947103729256558" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="allfile.js"></script>
+            <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "80px";
+                }
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+            </script>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148440850-2"></script>
+            <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+    
+                  gtag('config', 'UA-148440850-2');
+            </script>
+            
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script type="text/javascript">
         //This function will only work if the entire interval is either BCE or CE
@@ -17,6 +51,25 @@
         </script>
     </head>
     <body onload="myFunction()">
+        <header id="at_the_top">
+            <div id="mainHeader">
+                <div id="homePage" class="homeLink">
+                                                    
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <ul id="menu">
+                    </ul>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Engineering Subjects</span>
+                
+            </div>
+        </header>
+        <main id="mainWindow" onclick="closeNav()">
+            <h1>SITE UNDER CONSTRUCTION</h1>
+            <h2 id="title_of_the_content">About</h2>
+            <p id="this_is_actual_content">This website has been created as a resource for making, creating, and engineering!!!</p>
+            
+    
         <h1>Static Gasses</h1>
         Gasses are in a static state when they are not in motion -like the air in a balloon.<br>
         <h3>Specific Gas Constant (R<sub>specific</sub>)</h3>
@@ -175,6 +228,31 @@
         would be measured in the lab, but will generate some amount of error. The greater the speed, the greater the 
         error. The error is so high at speeds above Mach .3 that the equation cannot be used in those conditions at all</div> 
         <big><i> p<sub>T</sub>=p+.5*rho*v<super>2</super> </i></big></div> 
+        </main>
+        <div id="fdbk">
+            <h2><a id="feedback"></a>Write how to improve this page</h2>
+            <form name="feedback" method="post" action="/lib/sendform.php">
+            <table>
+                <tbody><tr style="display:none"><td><input type="text" name="URL" readonly="readonly"></td></tr>
+                <tr><td><textarea name="Message" cols="50" rows="5" placeholder="Your message ..."></textarea></td></tr>
+                <tr><td><input type="button" value="Submit Feedback" name="Action" class="btn btn-secondary" onclick="OnSubFb()"></td></tr>
+            </tbody></table>
+            </form>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+
+        <footer>
+            <!-- Marking the footer section -->
+               <div class="closing">
+                   <ul id="at_the_bottom">
+                   </ul>				
+               </div>
+           </footer>
     </body>
 </html>
 
