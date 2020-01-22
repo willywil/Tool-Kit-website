@@ -49,6 +49,11 @@ Home page -
     -resources
       +links
       +equations
+  _Numerical methods
+    -Algorithiums
+    -How to use
+    -Why would you use a specific method
+    
 Form
   -Users
   -Links to other subjects
