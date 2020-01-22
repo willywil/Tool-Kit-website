@@ -64,7 +64,7 @@
                         </ul>
                         <strong>Step 1:</strong>
 
-                        For this step, first download the <a title="Arduino - Software" href="http://arduino.cc/en/Main/Software" target="_blank">Arduino software</a> from <a title="Arduino - Home" href="http://www.arduino.cc" target="_blank">Arduino.cc</a> and then install the software after download is complete.
+                        <p>For this step, first download the <a title="Arduino - Software" href="http://arduino.cc/en/Main/Software" target="_blank">Arduino software</a> from <a title="Arduino - Home" href="http://www.arduino.cc" target="_blank">Arduino.cc</a> and then install the software after download is complete.</p>
                     </P>
                         <strong>Step 2:</strong>
                     <p>
@@ -72,37 +72,34 @@
                     </p>
                     <strong>Step 3:</strong>
                     <p>
-                        The blinking of a LED is the common method of testing electronics’ functionality. In the empty space copy the following text. Use COPY and PASTE if needed.
+                        <p>The blinking of a LED is the common method of testing electronics’ functionality. In the empty space copy the following text. <br>Use COPY and PASTE if needed.</p>
 
-                        //
+                        <br>//
 
-                        // the setup function runs once when you press reset or power the board
+                        <br>// the setup function runs once when you press reset or power the board
 
-                        void setup() {
+                        <br>void setup() {
 
-                        // initialize digital pin 13 as an output.
 
-                        pinMode(13, OUTPUT);
+                            <br>pinMode(13, OUTPUT);    // initialize digital pin 13 as an output.
 
-                        }
+                        <br>}   // the loop function runs over and over again forever
 
-                        // the loop function runs over and over again forever
+                        <br>void loop() {
 
-                        void loop() {
+                            <br>digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
 
-                        digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
+                            <br>delay(500);              // wait for a second
 
-                        delay(500);              // wait for a second
+                            <br>digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
 
-                        digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
+                            <br>delay(500);              // wait for a second
 
-                        delay(500);              // wait for a second
+                        <br>}
 
-                        }
+                        <br>//End of Program
 
-                        //End of Program
-
-                        //
+                        
                     </p>
                     <p>
                         Everything on the line after “//” represents comments and are not included in the program.
