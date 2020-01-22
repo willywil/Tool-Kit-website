@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" type="text/css" href="CSS/styles.css"/>
+        <title>Tools for Engineers-Collaborative Robots</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This website is a resource for engineer formulas, equations, calculators, and tools">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="formulas, equations, calculators, tools, math, engineer">
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+        <link rel="icon" type="image/png" href="../images/favicon.ico">
+        <!-- <link rel="manifest" href="/site.webmanifest"> this is causing an error on the page and i got it from the website that gave me the favicon-->
+        <script data-ad-client="ca-pub-3947103729256558" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../allfile.js"></script>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "80px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148440850-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-148440850-2');
+        </script>    
+    </head>	
+    <body>
+        <header id="at_the_top">
+            <div id="mainHeader">
+                <div id="homePage" class="homeLink">   
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <ul id="menu">
+                    </ul>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Engineering Subjects
+                </span>
+            </div>
+        </header>
+        <main id="mainWindow" onclick="closeNav()">
+                <article >
+                    <h1>Collaborative Robots</h1>
+                    <h3>Author: Jon Wilhelm</h3>
+                    <p>
+                        In todays industry robots are becoming vital to the manufacturing process. Many think robots are going to take the jobs away from humans. I could go on all day debating this very point but that is not the topic of this article. The role robots perform in industry is to follow the 3 Ds of robotics Dull, Dirty, or Dangerous. If we take a moment and talk about dull jobs we find robots can be very helpful. On the production line we have humans performing jobs that are repetitive and ergonomically damaging. Yes we can perform these tasks but when we do, medical issues develop and humans are harmed. Let me put this into an analogy, say someone who is 5 ft tall tries to reach something off a shelf. They will most likely use a ladder or ask someone who is taller to help reach said item. In our case that someone will most likely be a robot. If we think of robots this way they do not seem scary but very helpful.
+                    </p>
+                    <p>
+                        In the past several decades the robots have been designed to perform only one task and if additional tasks need to be done a new design is issued. We have come a long way over the years and the technology has become very cheap and versatile. One way to reduce the cost has been to standardize the tooling with just a hand. A robot could be outfitted to have one or two human hands with similar dexterity. If the robot has these hands the company could use current tools to perform the same task as the humans. For example a welding robot fabricating a part. You could spend the money to design a special tool that will bolt to a robot and then you can change out special tools for each task. The other option would be to use an off the shelf tool like a welder or angle grinder and perform the same job. Now you may ask, "what about the code and programming the robot". Well ten years ago visual recognition and sensor feedback was not up to spec, but now they have been simplified to handle this and more.
+                    </p>
+                    <p>
+                        The age of sensors is upon us and we are able to sense more of our environment. More specifically visual recognition has improved with the increase of processor speeds. There are cameras on the market that have high-speed processor integrated into the camera sensor allowing the camera to perform simple facial recognition, pattern recognition, and much more. Recently there has been a robot developed which performs many of the tasks I have described and more. The robot's name is Baxter. Baxter is a robot torso with two 6 degree of freedom arms. The arms can be outfitted with human like hands or special tooling. Baxter also has a head made from a tablet. On the screen of the tablet Baxter has a face with eyes, nose, and mouth and will turn its head/eyes and modify facial expressions signalling intent. Studies have shown humans look for these ques and when we do not have such ques fear and distrust develops. Baxter also has the ability to recognize facial expressions on other humans. This allows Baxter to recognize the humans' intent. In other situations where Baxter is not the ideal robot we can install a camera in the robot cell to track movement in order to avoid collisions. Also in the event a human enters the cell the speed of the robot can be reduced in order to limit injury. If we push for more of these features we can remove the guarding on robots and also help reduce the cost of the robots allowing for more robots. By removing the guarding we can reduce the robot's and human's limitations. How does guarding limit the robot or human you may ask. The guarding has to be removed to work on a robot and if another robot shares the same cell then the other robot has to be shut down. If changes are made to the robot those changes will have to include the guarding as well.
+                    </p>
+                    <p>
+                        All in all we are at a point in technology where robots and humans can work closer with each other.
+                    </p>
+
+                </article>
+            <div id="fdbk">
+                <h2><a id="feedback"></a>Write how to improve this page</h2>
+                <form name="feedback" method="post" action="/lib/sendform.php">
+                    <table>
+                        <tbody>
+                            <tr style="display:none">
+                                <td>
+                                    <input type="text" name="URL" readonly="readonly">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea name="Message" cols="50" rows="5" placeholder="Your message ...">
+                                    </textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="button" value="Submit Feedback" name="Action" class="btn btn-secondary" onclick="OnSubFb()">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
+        </main>
+            <!--https://websitesetup.org/33-ways-to-monetize-website/!-->
+        <footer>
+            <!-- Marking the footer section -->
+            <div class="closing">
+                <ul id="at_the_bottom">
+                </ul>				
+            </div>
+        </footer>
+    </body>
+</html>

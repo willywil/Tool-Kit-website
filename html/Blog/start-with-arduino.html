@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" type="text/css" href="../CSS/styles.css"/>
+        <title>Tools for Engineers-Getting Started With Arduino</title>
+        <meta charset="utf-8">
+        <meta name="description" content="This website is a resource for engineer formulas, equations, calculators, and tools">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="formulas, equations, calculators, tools, math, engineer">
+        <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+        <link rel="icon" type="image/png" href="../images/favicon.ico">
+        <!-- <link rel="manifest" href="/site.webmanifest"> this is causing an error on the page and i got it from the website that gave me the favicon-->
+        <script data-ad-client="ca-pub-3947103729256558" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../allfile.js"></script>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "80px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148440850-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-148440850-2');
+        </script>    
+    </head>	
+    <body>
+        <header id="at_the_top">
+            <div id="mainHeader">
+                <div id="homePage" class="homeLink">   
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <ul id="menu">
+                    </ul>
+                </div>
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Engineering Subjects
+                </span>
+            </div>
+        </header>
+        <main id="mainWindow" onclick="closeNav()">
+                <article >
+                    <h1>Getting Started with Arduino</h1>
+                    <h3>Author: Jon Wilhelm</h3>
+                    <p>
+                        Are you interested in building robots? I am, building robots is my hobby, my passion, and I hope one day my career. A robot consists of three things, the body (mechanical), electrical aka motors, and computers aka the brain. In this instruction I will guide you through programming of the brain. A computer is a device that processes 1s and 0s to perform a logical operation. In order to understand how to program a computer, I choose the Arduino to demonstrate this process. For our first program we will blink a LED (Light Emitting Diode).
+                    </p>
+                    <P>
+                        Required Supplies:
+                        <ul>
+                            <li><a title="Arduino - ArduinoBoardUno" href="http://arduino.cc/en/Main/ArduinoBoardUno" target="_blank">Arduino UNO board</a></li>
+                            <li><a title="Arduino - Software" href="http://arduino.cc/en/Main/Software" target="_blank">Arduino Software</a></li>
+                            <li>USB cable that will fit the Arduino</li>
+                        </ul>
+                        <strong>Step 1:</strong>
+
+                        For this step, first download the <a title="Arduino - Software" href="http://arduino.cc/en/Main/Software" target="_blank">Arduino software</a> from <a title="Arduino - Home" href="http://www.arduino.cc" target="_blank">Arduino.cc</a> and then install the software after download is complete.
+                    </P>
+                        <strong>Step 2:</strong>
+                    <p>
+                        Upon completion of install, connect the USB cable to the Arduino and connect the opposite end to an available USB port on your computer. At this time your computer may recognize the Arduino and install available drivers. If your computer does not notify you it has recognized the Arduino with sound and/or a prompt, check the software. To verify your Arduino is connected in the software, first open the software, select “Tools” in the menu bar, then “Serial Port” you should have at least one item in the dropdown list. If the software did not recognize the board and does not display a serial port under “Tools” please seek help in <a title="Arduino Forum - Index" href="http://forum.arduino.cc/" target="_blank">Arduino.cc Forum</a>.
+                    </p>
+                    <strong>Step 3:</strong>
+                    <p>
+                        The blinking of a LED is the common method of testing electronics’ functionality. In the empty space copy the following text. Use COPY and PASTE if needed.
+
+                        //
+
+                        // the setup function runs once when you press reset or power the board
+
+                        void setup() {
+
+                        // initialize digital pin 13 as an output.
+
+                        pinMode(13, OUTPUT);
+
+                        }
+
+                        // the loop function runs over and over again forever
+
+                        void loop() {
+
+                        digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
+
+                        delay(500);              // wait for a second
+
+                        digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
+
+                        delay(500);              // wait for a second
+
+                        }
+
+                        //End of Program
+
+                        //
+                    </p>
+                    <p>
+                        Everything on the line after “//” represents comments and are not included in the program.
+                    </p>
+                    <strong>Step 4:</strong>
+                    <p>
+                        Now you are ready to save your work, compile (convert to 1s and 0s), and upload your code to the Arduino. To save navigate to the menu bar click “File”, then “Save As”. Name your program and save your program. Next step at the top by the File option select the “Check Mark”. This will compile your code and check for any errors before the program can be uploaded to the Arduino. Down at the bottom of the window the software will display possible errors (seek help on <a title="Arduino - Forum" href="http://www.forum.arduino.cc/" target="_blank">Arduino.cc Forum</a>) or “Done Compiling”. If the software displayed “Done Compiling”, go back to the top and click on the Arrow next to the Check Mark. The software will recompile and write the program to the Arduino and the LED on the board should then start blinking twice per second.  
+                    </p>
+                    <strong>Step 5:</strong>
+                    <p>
+                        You can modify this code as much as you want now. I would suggest starting with the “delay (500);” and changing the “500” to any value between 1 to 10000. Do not add non numerical characters to the number. After changing the value or values recompile and upload to the board. Watch how the LED will blink. If you would like to try other programs, select ‘File-Examples-Basic’ here you will find “blink” the program we just modified or select another program from the list. By searching <a title="Arduino - Home" href="http://www.arduino.cc" target="_blank">Arduino.cc</a> and the internet you can find more programs.
+                    </p>
+                    <p>
+                        I hope you enjoyed this tutorial and have fun with your Arduino.
+                    </p>
+                </article>
+            <div id="fdbk">
+                <h2><a id="feedback"></a>Write how to improve this page</h2>
+                <form name="feedback" method="post" action="/lib/sendform.php">
+                    <table>
+                        <tbody>
+                            <tr style="display:none">
+                                <td>
+                                    <input type="text" name="URL" readonly="readonly">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <textarea name="Message" cols="50" rows="5" placeholder="Your message ...">
+                                    </textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="button" value="Submit Feedback" name="Action" class="btn btn-secondary" onclick="OnSubFb()">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+            </div>
+        </main>
+            <!--https://websitesetup.org/33-ways-to-monetize-website/!-->
+        <footer>
+            <!-- Marking the footer section -->
+            <div class="closing">
+                <ul id="at_the_bottom">
+                </ul>				
+            </div>
+        </footer>
+    </body>
+</html>
