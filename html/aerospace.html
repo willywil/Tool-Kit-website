@@ -44,7 +44,7 @@
                 var MW_metric = [28.97, 18.01528, 44.01, 16.04];
                 for (i = 0; i < gases.length; i++){
                     var R_spec = 8.314/MW_metric[i]*1000;
-                    $("table").append("<tr style='width:60%;' id="+i+"><td>"+gases[i]+"</td><td>"+Math.round(R_spec*100)/100+"</td><td>"+Math.round(R_spec*171600/287)/100+"</td></tr>");
+                    $("#specific").append("<tr style='width:60%;' id="+i+"><td>"+gases[i]+"</td><td>"+Math.round(R_spec*100)/100+"</td><td>"+Math.round(R_spec*171600/287)/100+"</td></tr>");
                 } 
             });
         }
@@ -77,7 +77,7 @@
         if you had a kilogram of that gas at one degree kelvin. In U.S. units, the specific gas constant of any gas tells you how much enthalpy would be present 
         if you had a slug of that gas at one degree Ranikie. It's just the ratio of the gas constant (8.314 J/(mol•K) in metric or  ft-lb/(slug•R) in U.S.) to
         the molecular weight of the gas. </div>
-        <table>
+        <table id="specific">
             <tr style="width:60%;"><b>
                 <td>Gas</td>
                 <td>R<sub>specific</sub> (metric)</td>
@@ -88,26 +88,26 @@
     <h3>Charles' Law</h3>
     <div id="content"><b>Simply Put: </b>Heating a gas will cause it to expand. Cooling a gas will cause it to compress.
     It is a proportional relationship. They always increase or decrease together, as long as the pressure is constant.<br>
-    <big><i> T prop V </i></big></div> 
+    <big><i> T ∝ V </i></big></div>
     <br><br>
     <h3>Gay-Lussac's Law</h3>
     <div id="content"><b>Simply Put: </b>If the gas cannot expand, then heating the gas will cause it to build pressure.
     If the gas cannot expand, then cooling the gas will lower its pressure. It is a proportional relationship. 
     They always increase or decrease together, as long as the volume is constant.</div> <br>
-    <big><i> T prop p </i></big></div> 
+    <big><i> T ∝ p </i></big></div>  
     <br><br>
     <h3>Boyles' Law</h3>
     <div id="content"><b>Simply Put: </b>If the temperature does not change at all, compressing a gas will cause it to build pressure.
     If the temperature does not change at all, allowing a gas to expand will lower its pressure. It is a proportional relationship. 
     They always increase or decrease together, as long as the temperature is constant. </div> 
-    <big><i> p prop V </i></big></div> 
+    <big><i> p ∝ V </i></big></div> 
     <br><br>
     <h3>Equation of State</h3>
     <div id="content"><b>Simply Put: </b>Static pressure is the product of density, static temperature, 
         and the specific gas constant of the gas. The equation of state is a combination of Boyles' Law, 
         Gay-Lussac Law, and Charles' Law. It sums up all the other laws about static gasses. As long as 
         you know two of the three variables (T, p, or rho)</div> <br>
-        <big><i> p=rho•R<sub>specific</sub>•T </i></big></div> 
+        <big><i> p=ρ•R<sub>specific</sub>•T </i></big></div> 
     <br><br>
     <h1>Air at High Altitudes</h1>
         Aerospace engineering is all about designing objects that will achieve high altitudes. No 
@@ -123,8 +123,10 @@
     that value. It's called the 'temperature-altitude'. Density can be given as the altitiude at which the air pressure would be at 
     that value. It's called the 'density-altitude'. <i>The Standard Atmosphere</i> only gives values every 500ft or 100km. 
     So if you have a pressure, temperature, or density value that falls between two points, you must use linear intropolation to 
-    find the correct altitude value for the measurement. This is the equation for linear intropolation: 
-        <big><i> h=h<sub>o</sub>+(T<sub>measured</sub>-T<sub>closest lower table value</sub>)•delta-h<sub>table</sub>/delta-T<sub>table</sub> </i></big></div> 
+    find the correct altitude value for the measurement. This is the equation for linear intropolation: <br>	
+    <big><i> h=h<sub>o</sub>+(T<sub>measured</sub>-T<sub>GVBMQ</sub>)•Δh<sub>table</sub>/ΔT<sub>table</sub> </i></big></div>	
+    GVBMQ = Greatest Value Below Measured Quantity 
+    <br><br>
     <br><br>
     <h3>Sea Level Conditions</h3>
     <div id="content"><b>Simply Put: </b>At sea level, the air has certain quailites:
@@ -132,19 +134,22 @@
         <tr>
             <td>Density</td>
             <td>1.225 kg/m^3</td>
+            <td>.002377 slugs/ft^3</td>
         </tr>
         <tr>
             <td>Pressure</td>
             <td>101325 Pa</td>
+            <td>211.62 lb/ft^2</td>
         </tr>
         <tr>
             <td>Temperature</td>
-            <td></td>
+            <td>288.16K</td>	
+            <td>518.19R</td>
         </tr>
     </table></div> 
-    <br><br><br><br>
-    <h3>Sea Level Conditions</h3>
-    <div id="content"><b>Simply Put: </b>At sea level, the air has certain quailites:
+    <h3>Layers of the atmosphere</h3>	
+    <div id="content"><b>Simply Put: </b>The atmosphere can be grouped into four major layers. Some texts describe the speration of the 	
+    atmosphere into layers in different ways. This is the easiest way to approach the atmospheric layers from an aerospace engineering point of view:
     <table>
         <tr>
             <td>Layer</td>
@@ -212,8 +217,8 @@
     .3, the flow is considered 'compressible'. If the Mach number is less than 1, the flow is subsonic. If the Mach 
     number is greater than 1 the flow is supersonic. If the Mach number is greater than 3, the flow is considered 
     supersonic. The mach number is literally the ratio of the flow speed to the The speed of sound is the root of the product of the temperature of the gas, the 
-    specific gas constant for the gas, and the ratio of specific heats for the gas (gamma). <br>
-        <big><i> p=sqrt(gamma•R<sub>specific</sub>•T)</i></big></div> 
+    specific gas constant for the gas, and the ratio of specific heats for the gas (γ). <br>	
+    <big><i> p=sqrt(γ•R<sub>specific</sub>•T)</i></big></div>
     <h3>The Effects of Speed</h3>
     <div id="content"><b>Simply Put: </b>The faster a fluid is traveling, the lower it's static pressure will become.
         Becuase pressure is proportional to temperature (Gay-Lussac Law), the fluid cool as well. 
@@ -227,7 +232,7 @@
         and the dynamic pressure. Bernouli's equation is an aproximation. It will generate a result very close to what 
         would be measured in the lab, but will generate some amount of error. The greater the speed, the greater the 
         error. The error is so high at speeds above Mach .3 that the equation cannot be used in those conditions at all</div> 
-        <big><i> p<sub>T</sub>=p+.5*rho*v<super>2</super> </i></big></div> 
+        <big><i> p<sub>T</sub>=p+.5*ρ*v<sup>2</sup> </i></big></div>
         </main>
         <div id="fdbk">
             <h2><a id="feedback"></a>Write how to improve this page</h2>
